@@ -1,0 +1,81 @@
+.nonveg-title {
+  text-align: center;
+  color: red;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nonveg-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nonveg-card {
+  width: 220px;
+  padding: 15px;
+  border: 1px solid #070707;
+  border-radius: 10px;
+  background-color: #faf4f4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nonveg-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nonveg-img {
+  width: 100%;
+  height: 130px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.nonveg-desc {
+  font-size: 14px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.nonveg-btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.nonveg-btn:hover {
+  background-color: darkred;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  background: #e5e5e5;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination .active-page {
+  background-color: red !important;
+  color: white !important;
+}
