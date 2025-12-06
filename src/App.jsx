@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Veg from "./Veg";
 
-import Milkshake from "./Milkshake";
+import Milkshake from "./milkshake";
 import AboutUs from "./Aboutus";
 import Cart from "./Cart";
 import NonVeg from "./NonVeg (1)";
