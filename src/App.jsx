@@ -21,7 +21,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/veg" element={<Veg />} />
           <Route path="/nonveg" element={<NonVeg />} />
-          <Route path="/milkshake" element={<Milkshake />} />
+          <Route path="/Milkshake" element={<Milkshake />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
