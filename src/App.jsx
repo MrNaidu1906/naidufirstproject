@@ -4,12 +4,12 @@ import store from "./Store";
 
 import Navbar from "./Navbar";
 import Home from "./Home";
+import Menu from "./Menu";
 import Veg from "./Veg";
-
-import Milkshake from "./milkshake";
+import NonVeg from "./NonVeg";
+import Milkshake from "./Milkshake";
 import AboutUs from "./Aboutus";
 import Cart from "./Cart";
-import NonVeg from "./NonVeg (1)";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
           <Route path="/veg" element={<Veg />} />
           <Route path="/nonveg" element={<NonVeg />} />
           <Route path="/milkshake" element={<Milkshake />} />

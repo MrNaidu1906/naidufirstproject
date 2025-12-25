@@ -1,46 +1,33 @@
-.home-title {
+/* Hero Background */
+.hero-section {
+  height: 100vh; /* full screen */
+  background-image: url("https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg"); /* example food image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  padding: 2rem;
   text-align: center;
-  color: green;
-  margin-bottom: 20px;
-  font-size: 32px;
+  color: white;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6347;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.home-container {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-}
-
-.home-content {
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-  background-color: #030303;
-  border: 1px solid #070707;
-  border-radius: 12px;
-  color: #ccc;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.home-content:hover {
-  transform: scale(1.01);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-}
-
-.home-img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.home-desc {
-  font-size: 18px;
-  margin-top: 10px;
-  line-height: 1.6;
-  color: #dddddd;
+.hero-btn:hover {
+  background-color: #e5533d;
 }

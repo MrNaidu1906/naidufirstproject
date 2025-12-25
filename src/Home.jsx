@@ -3,18 +3,17 @@ import "./Home.css";
 
 function Home() {
   return (
-    <>
-      {/* Logo */}
-      <div className="logo-container">
-        <div className="logo">aha bhojanambu</div>
-      </div>
-
-      {/* Hero content */}
-      <div className="home-content">
+    <div className="hero-section">
+      <div className="hero-overlay">
         <h1>Welcome to Aha Bhojanambu</h1>
         <p>Delicious food delivered with love.</p>
+
+        {/* MENU BUTTON */}
+        <Link to="/menu" className="hero-btn">
+          View Menu
+        </Link>
       </div>
-    </>
+    </div>
   );
 }
 
