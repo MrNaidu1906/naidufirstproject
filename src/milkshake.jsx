@@ -4,8 +4,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "./Store";
 
 function Milkshake() {
-
-  let milkshakeItems = [
+  const milkshakeItems = [
     { id: 141, name: "Chocolate Milkshake", price: 150, desc: "Rich chocolate blended with ice cream.", img: "https://tse1.mm.bing.net/th/id/OIP.aTrZE7XegFg5NqMHJHJ5PAHaLH?pid=Api&P=0&h=1800" },
     { id: 142, name: "Strawberry Milkshake", price: 140, desc: "Fresh strawberries with smooth milk.", img: "https://tse4.mm.bing.net/th/id/OIP.TaiWRFUScVcJqqV_1ULP9gHaLH?pid=Api&P=0&h=180" },
     { id: 143, name: "Vanilla Milkshake", price: 120, desc: "Classic vanilla milkshake with ice cream.", img: "https://tse1.mm.bing.net/th/id/OIP.tc_JQFfdBb5AuNh8Ks1btwHaHa?pid=Api&P=0&h=180" },
@@ -28,37 +27,36 @@ function Milkshake() {
 
   return (
     <>
-      <h1 className="">This is Milkshake Page</h1>
+      <h1>This is Milkshake Page</h1>
 
       <ul className="milkshake-list">
         {pageItems.map((item) => (
           <li key={item.id} className="milkshake-card">
-            <img src={item.img} alt={item.name} className="milkshake-img" />
+            <img src={item.img} alt={item.name} />
             <h3>{item.name}</h3>
-            <p className="milkshake-desc">{item.desc}</p>
-            <p><b>Price: ₹{item.price}</b></p>
-            <button onClick={() => dispatch(addToCart(item))}>AddToCart</button>
+            <p>{item.desc}</p>
+            <b>₹{item.price}</b>
+            <br />
+            <button onClick={() => dispatch(addToCart(item))}>
+              Add To Cart
+            </button>
           </li>
         ))}
       </ul>
 
       <div className="pagination">
-        <button onClick={() => setPage(page - 1)} disabled={page === 1}>
-          ⬅ Previous
+        <button disabled={page === 1} onClick={() => setPage(page - 1)}>
+          Prev
         </button>
 
         {[...Array(totalPages)].map((_, i) => (
-          <button
-            key={i}
-            className={page === i + 1 ? "active-page" : ""}
-            onClick={() => setPage(i + 1)}
-          >
+          <button key={i} onClick={() => setPage(i + 1)}>
             {i + 1}
           </button>
         ))}
 
-        <button onClick={() => setPage(page + 1)} disabled={page === totalPages}>
-          Next ➡
+        <button disabled={page === totalPages} onClick={() => setPage(page + 1)}>
+          Next
         </button>
       </div>
     </>
